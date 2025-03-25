@@ -1,4 +1,4 @@
-package com.example.demo.controllers;
+package com.example.demo;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,7 +9,7 @@ public class HomeController {
 
     @GetMapping("/")
     public String home(Model model) {
-        model.addAttribute("message", "Bienvenue sur notre site e-commerce !");
-        return "index"; // Correspond au fichier templates/index.html
+        model.addAttribute("title", "Bienvenue sur l'E-Commerce");
+        return "index";
     }
 }
